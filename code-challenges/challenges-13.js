@@ -39,12 +39,9 @@
 // Output: 5
 
 const objectCounter = (obj) => {
-    obj.reduce((accumulator, current) => {
-        accumulator[current] = accumulator[current]
-             ? accumulator[current] +=1 
-             : accumulator[current] = 1
-        return accumulator
-     },{});
+
+    // write your code here
+
 
 }
 // -------------------------------------------------------------------------------------------------------
