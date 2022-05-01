@@ -39,6 +39,7 @@
 // Output: 5
 
 const objectCounter = (obj) => {
+
  
   const teamsCount = obj.reduce((acc, currTeam) => acc + 1, 0);
   return teamsCount;
