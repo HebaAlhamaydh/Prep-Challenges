@@ -39,9 +39,16 @@
 // Output: 5
 
 const objectCounter = (obj) => {
-    // write your code here
-
+ 
+  const teamsCount = obj.reduce((acc, currTeam) => acc + 1, 0);
+  return teamsCount;
 }
+
+
+
+
+
+
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
@@ -60,9 +67,15 @@ const objectCounter = (obj) => {
 // ------------------------
 
 const stringReverse = (str) => {
-    // write your code here
-
+     //convert the string to an array
+    // return str.reduce((rev, char) => char+rev, "")
+     let arr = str.split(' ');
+  return arr.reduce((accumulator, currentValue) => {
+    return currentValue +" "+accumulator;
+  })
 }
+    
+    
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
